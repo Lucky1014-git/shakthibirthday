@@ -7,4 +7,4 @@ app.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname + '/Shakthi.html'));
 });
 
-app.listen(port, () => console.log(`url-shortener listening on port ${port}!`));
+app.listen(process.env.PORT || port, () => console.log(`url-shortener listening on port ${port}!`));
